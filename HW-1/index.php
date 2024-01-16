@@ -1,3 +1,4 @@
-<?php
-phpinfo();
-?> 
+$name = "Настя" "String";
+
+
+
