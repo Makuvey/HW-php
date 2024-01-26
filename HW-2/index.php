@@ -1,18 +1,22 @@
 <?php
 function showType($value) {
-    $Type = gettype($value);
-    echo "Тип данних: $Type";
+    $type = gettype($value);
+    return "Тип данних: $type";
 }
 
+$user = ["name" => "Nastya", "age" => 45, "city" => "New York"]
 
-showType(null);
+echo showType(null);
 echo "<br>";
-showType(13.23);
+echo showType(13.23);
 echo "<br>";
-showType(1488);
+echo showType(1488);
 echo "<br>";
-showType(true);
+echo showType(true);
 echo "<br>";
-showType($arr = [1, 2, 3]);
+echo showType([1, 2, 3]);
 echo "<br>";
-showType('Nastya');
+echo showType('Nastya');
+echo "<br>";
+echo showType($user);
+echo "<br>";
